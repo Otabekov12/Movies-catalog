@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="/./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+    
+    <title>Movies catalog</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class=" titele text-center">Movies catalog</h1>
+        
+        <div class="row g-5">
+            
+            <div class=" col-4 ">
+                <input 
+                class="form-control  form-control-sm " 
+                type="text" placeholder="the name of the film" 
+                aria-label=".form-control-sm example">
+                
+                <div class="mb-4">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="number">
+                </div>
+                
+                <div class="mb-4">
+                    
+                    <input
+                    class="form-control"
+                    id="exampleDataList"
+                    placeholder="All"
+                    list="datalistOptions"
+                    />
+                    
+                    <datalist id="datalistOptions">
+                        <option value="Avengers: Infinity War" />
+                        <option value="The Avengers" />
+                        <option value="Avengers: Age of Ultron" />
+                        <option value="Spider-Man: Homecoming" />
+                    </datalist>
+                    
+                </div>
+                
+                <div class="mb-3">
+                    <input
+                    class="form-control"
+                    id="exampleDataList"
+                    placeholder="Rating (high to low)"
+                    list="Rating"
+                    />
+                    
+                    <datalist id="Rating">
+                        <option value="Tashkent" />
+                        <option value="New York" />
+                        <option value="Bishkek" />
+                        <option value="Tokio" />
+                    </datalist>
+                </div>
+                <button class="button btn btn-primary mb-4 mt-3" type="submit">Search</button>
+                
+                
+                <h2>Bookmarked movies</h2>
+                <div class="border">
+                    <div class="border-1 p-3 border-button">
+                        <p>Avangers: Infinitiy War</p>
+                        <button class=" btn btn-danger ">Remove</button>
+                    </div>
+                </div>
+                
+                <div class="border">
+                    <div class="border-1 p-3 border-button">
+                        <p>Avangers: Infinitiy War</p>
+                        <button class=" btn btn-danger ">Remove</button>
+                    </div>
+                </div>
+                
+                <div class="border">
+                    <div class="border-1 p-3 border-button">
+                        <p>Avangers: Infinitiy War</p>
+                        <button class=" btn btn-danger ">Remove</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-8">
+                <div>
+                    <h5>Search results: 39</h5>
+                    <div class="alert alert-primary" role="alert">
+                        Use the form on the left to search for a movie
+                    </div>
+                    
+                    <div class="row g-md-4 row-cols-auto">
+                        <div class="col-6">
+                            <div class="card">  <!-- style="width: 18rem;" -->
+                                <img src="./war1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avangers:Infinity War</h5>
+                                    <p class="card-text mb-1">
+                                        <i class="bi bi-calendar2-fill"></i>
+                                        2018
+                                    </p>
+                                    
+                                    <p class="card-text ">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        8.7
+                                    </p>
+                                    <div class="buttons">
+                                        <a href="#" class="btn col btn-sm btn-outline-primary ">Watch trailer</a>
+                                        <a href="#" class="btn col btn-sm btn-outline-info">More info</a>
+                                        <a href="#" class="btn col btn-sm btn-outline-success">Bookmark</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-5">
+                            <div class="card ">  <!-- style="width: 18rem;" -->
+                                <img src="./iron-man.jpg" class="card-img-top pb-4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Avangers</h5>
+                                    <p class="card-text mb-1">
+                                        <i class="bi bi-calendar2-fill"></i>
+                                        2012
+                                    </p>
+                                    
+                                    <p class="card-text ">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        8.1
+                                    </p>
+                                    
+                                    <a href="#" class="btn col btn-sm btn-outline-primary ">Watch trailer</a>
+                                    <a href="#" class="btn col btn-sm btn-outline-info">More info</a>
+                                    <a href="#" class="btn col btn-sm btn-outline-success">Bookmark</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="btn-group justify-content-center" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-outline-primary active ">1</button>
+                    <button type="button" class="btn btn-outline-primary ">2</button>
+                    <button type="button" class="btn btn-outline-primary ">3</button>
+                    <button type="button" class="btn btn-outline-primary ">4</button>
+                  </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
